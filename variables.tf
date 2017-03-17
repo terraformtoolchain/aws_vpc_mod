@@ -9,11 +9,6 @@ variable "name"	{
 	default = "base"
 }
 
-variable "dev_stage_prod" {
-	description = "Creates route53 base zones for dev, staging, and production."
-	default = false
-}
-
 variable "base_domain" {
 	description = "The base domain of the VPC."
 	default = "default.zone"

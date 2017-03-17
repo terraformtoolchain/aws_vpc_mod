@@ -13,9 +13,3 @@ resource "aws_vpc" "main" {
 		create_before_destroy	= true
 	}
 }
-
-module "main_zone" {
-	source = "git::https://github.com/terraformtoolchain/aws_route53_zone.git?ref=v0.1.3"
-
-	vpc_id	= "${ aws_vpc.main.id }"
-}

@@ -7,14 +7,14 @@ A Terraform module that sets up a base AWS VPC with single or multi Route53 inte
 This tiny VPC module makes no assumptions about what the final subnet configuration will be. This decoupling allows subnets to be managed by separate state files. 
 
 ## External Modules
-*[aws_route53_zone]
+* [aws_route53_zone]
 
 [aws_route53_zone]: https://github.com/terraformtoolchain/aws_route53_zone
 
 ## Enable Multi-Zones
 Zone configuration is managed by a nested module that handles Route53. Please see the route53 module's [README] 
 
-[README]: https://github.com/terraformtoolchain/aws_route53_zone/README.md
+[README]: https://github.com/terraformtoolchain/aws_route53_zone
 
 
 ## Module Input Variables

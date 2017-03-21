@@ -9,9 +9,9 @@ variable "name"	{
 	default = "base"
 }
 
-variable "base_domain" {
-	description = "The base domain of the VPC."
-	default = "default.zone"
+variable "dns_enabled"	{
+	description = "Enables DNS support in the VPC."
+	default = true
 }
 
 variable "cost_center" {
